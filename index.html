@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Interativo de Alunos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Cadastro de Alunos</h1>
+            <p>Sistema de gerenciamento de notas da turma</p>
+        </header>
+
+        <section class="card">
+            <h2>Novo Cadastro</h2>
+
+            <form id="form-aluno" novalidate>
+
+                <div class="grupo-campo">
+                    <label for="nome">Nome do aluno:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite o nome completo"
+                    >
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="nota">Nota:</label>
+                    <input
+                        type="number"
+                        id="nota"
+                        name="nota"
+                        placeholder="Digite uma nota de 0 a 10"
+                        step="0.1"
+                    >
+                </div>
+
+                <button type="submit">Cadastrar aluno</button>
+
+                <p id="mensagem" role="status"></p>
+
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Lista de Alunos</h2>
+
+            <div class="grupo-campo">
+                <label for="busca">Buscar aluno:</label>
+                <input
+                    type="text"
+                    id="busca"
+                    placeholder="Digite o nome para pesquisar..."
+                >
+            </div>
+
+            <p class="dica">
+                Dica: clique duas vezes em um aluno para removê-lo.
+            </p>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nota</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="corpo-tabela">
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="aviso-busca"></p>
+
+        </section>
+
+        <footer>
+            <p>Projeto desenvolvido para a Aula 12 - JavaScript</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

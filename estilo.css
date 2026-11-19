@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4f9;
+    color: #333;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #243b64;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #243b64;
+    margin-bottom: 20px;
+}
+
+.grupo-campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #315b9a;
+}
+
+button {
+    background-color: #315b9a;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #203f70;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: #18864b;
+}
+
+.erro {
+    color: #d62828;
+}
+
+.campo-erro {
+    border: 2px solid #d62828;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #243b64;
+    color: white;
+}
+
+tr.aprovado td:last-child {
+    color: #18864b;
+    font-weight: bold;
+}
+
+tr.reprovado td:last-child {
+    color: #d62828;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f0f4fa;
+}
+
+.dica {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+#aviso-busca {
+    margin-top: 15px;
+    color: #d62828;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 18px;
+    }
+
+    th, td {
+        padding: 9px;
+        font-size: 13px;
+    }
+}
